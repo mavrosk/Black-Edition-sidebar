@@ -1,1 +1,3 @@
-# -Black-Edition-sidebar
+Responsive with side bar
+2 Languages
+JQuery
