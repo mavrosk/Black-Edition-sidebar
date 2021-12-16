@@ -1,3 +1,3 @@
-Responsive with side bar
-2 Languages
-JQuery
+* Responsive with side bar
+* 2 Languages
+* JQuery
