@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<title>Black simple site</title>
+<script type="text/javascript" src="jquery.min.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript">
+  var arrLang = {
+    'en': {
+      'descrip': 'Description',
+      'keimeno': 'κξκξνξνκξνξκβν',
+      'titlos': ' ',
+      'orama': ' ',
+      'oramakeimeno': ' ',
+      'optimesa': ' ',
+      'location': ' ',
+      'telephone': ' ',
+      'mail': ''
+
+    },
+    'gr': {
+      'descrip': 'Σύντομη περιγραφή',
+      'keimeno': 'Η συσκευή του περιλαμβάνει εσωτερικά ένα πολύπλοκο σύστημα γραναζιών που επιτυγχάνουν την διαχείριση σημαντικής ποσότητας ενέργειας με μίνιμουμ απώλειες και αποτελεί ουσιαστικά έναν «γραναζωτό μειωτήρα στροφών με ανακυκλοφορία ισχύος με εκτεταμένη χρήση της μεθόδου κατεργασίας μέσω ηλεκτροδιάβρωσης σύρματος», όπως μας εξηγεί ο Βασίλειος Σπιτάς, Αναπληρωτής Καθηγητής του ΕΜΠ στη Σχολή Μηχανολόγων Μηχανικών, ο οποίος αντιλήφθηκε από την πρώτη στιγμή τις προοπτικές της εφεύρεσης.',
+      'titlos': 'Πλανητικό σύστημα πολλαπλών βαθμίδων υπερυψηλής σχέσης μετάδοσης',
+      'orama': 'Όραμα',
+      'oramakeimeno': 'Το κόστος κατασκευής για τη συσκευή είναι ιδιαίτερα χαμηλό, σε σχέση με τις συμβατικές μεθόδους, αλλά ο βαθμός απόδοσης είναι εξαιρετικά υψηλός, ενώ η εφεύρεση επιδέχεται και βελτιώσεων! Απλά, μπορούμε να το φανταστούμε ως ένα σύστημα γραναζιών - κατά αναλογία μπορούμε να το παρομοιάσουμε με τον Μηχανισμό των Αντικυθήρων - υψηλής παραγωγικότητας. ',
+      'optimesa': 'Οπτικοακουστικό Υλικό',
+      'location': 'Αθήνα, Ελλάδα',
+      'telephone': 'Τηλέφωνο: +00 151515',
+      'mail': 'Email: mail@mail.com'
+    }
+  };
+
+  $(function () {
+    $('.translate').click(function () {
+      var lang = $(this).attr('id');
+      $('.lang').each(function (index, element) {
+        $(this).text(arrLang[lang][$(this).attr('key')]);
+      })
+    })
+  })
+</script>
+<style>
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+  }
+
+  .w3-row-padding img {
+    margin-bottom: 12px
+  }
+
+  /* Set the width of the sidebar to 120px */
+  .w3-sidebar {
+    width: 120px;
+    background: #222;
+  }
+
+  /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+  #main {
+    margin-left: 120px
+  }
+
+  /* Remove margins from "page content" on small screens */
+  @media only screen and (max-width: 600px) {
+    #main {
+      margin-left: 0
+    }
+  }
+
+  #diesi {
+    text-decoration: none;
+  }
+
+  .flag {
+    width: 40px;
+    height: 25px;
+    border-radius: 10%;
+  }
+
+  .hero-image {
+    background-image: url("/Users/greenpandako/Desktop/Website Templates/protash 3/aeikinhto.jpeg");
+    background-color: black;
+    height: 900px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60vh;
+    position: relative;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    border: none;
+
+  }
+
+  #h1 {
+    font-size: 10vw;
+  }
+</style>
+
+
+
+<body class="w3-black">
+
+
+  <!-- Icon Bar (Sidebar - hidden on small screens) -->
+  <nav class="w3-sidebar w3-bar-block w3-xsmall w3-hide-small w3-center">
+    <!-- Avatar image in top left corner -->
+
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+      <i class="fa fa-home w3-xxlarge"></i>
+      <p>ΚΕΝΤΡΙΚΗ ΣΕΛΙΔΑ</p>
+    </a>
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-user w3-xxlarge"></i>
+      <p>ΣΧΕΤΙΚΑ ΜΕ ΕΜΑΣ</p>
+    </a>
+    <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-eye w3-xxlarge"></i>
+      <p>ΑΡΧΕΙΟ</p>
+    </a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-envelope w3-xxlarge"></i>
+      <p>ΕΠΙΚΟΙΝΩΝΙΑ</p>
+    </a>
+    <a id="gr" class="translate w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <img class="flag" src="flag-400.png" alt="">
+    </a>
+    <a id="en" class="translate w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <img class="flag" src="1200px-Flag_of_the_United_Kingdom.svg.png" alt="">
+    </a>
+
+  </nav>
+
+  <!-- Navbar on small screens (Hidden on medium and large screens) -->
+  <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+    <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+      <a href="#" class="w3-bar-item w3-button" style="width:25% !important">ΚΕΝΤΡΙΚΗ ΣΕΛΙΔΑ</a>
+      <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+      <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+      <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+
+    </div>
+  </div>
+
+  <!-- Page Content -->
+
+  <div class="w3-padding-large" id="main">
+    <!-- Header/Home -->
+    <div class="hero-image text-center">
+      <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+        <h1 class="lang" style="font-size:4vh " key="titlos">Πλανητικό σύστημα πολλαπλών βαθμίδων υπερυψηλής σχέσης
+          μετάδοσης </h1>
+        <p id="div1">geia sas</p>
+        <img src="./aeikinhto.jpeg" alt="">
+      </header>
+    </div>
+
+
+    <!-- About Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+      <h2 class="lang w3-text-light-grey" key="descrip">Σύντομη περιγραφή</h2>
+      <hr style="width:350px" class="w3-opacity">
+      <p class="lang" key="keimeno">Η συσκευή του περιλαμβάνει εσωτερικά ένα πολύπλοκο σύστημα γραναζιών που
+        επιτυγχάνουν την διαχείριση σημαντικής ποσότητας ενέργειας με μίνιμουμ απώλειες και αποτελεί ουσιαστικά έναν
+        «γραναζωτό μειωτήρα στροφών με ανακυκλοφορία ισχύος με εκτεταμένη χρήση της μεθόδου κατεργασίας μέσω
+        ηλεκτροδιάβρωσης σύρματος», όπως μας εξηγεί ο Βασίλειος Σπιτάς, Αναπληρωτής Καθηγητής του ΕΜΠ στη Σχολή
+        Μηχανολόγων Μηχανικών, ο οποίος αντιλήφθηκε από την πρώτη στιγμή τις προοπτικές της εφεύρεσης.
+      </p>
+
+
+      <!-- Testimonials -->
+      <div class="w3-padding-64 w3-content"></div>
+      <h3 class="lang w3-padding-20 w3-text-light-grey" key="orama">Όραμα</h3>
+      <hr style="width:200px" class="w3-opacity">
+
+      <p class="lang" key="oramakeimeno">Το κόστος κατασκευής για τη συσκευή είναι ιδιαίτερα χαμηλό, σε σχέση με τις
+        συμβατικές μεθόδους, αλλά ο βαθμός απόδοσης είναι εξαιρετικά υψηλός, ενώ η εφεύρεση επιδέχεται και βελτιώσεων!
+        Απλά, μπορούμε να το φανταστούμε ως ένα σύστημα γραναζιών - κατά αναλογία μπορούμε να το παρομοιάσουμε με τον
+        Μηχανισμό των Αντικυθήρων - υψηλής παραγωγικότητας. </p>
+      <!-- End About Section -->
+    </div>
+
+    <!-- Portfolio Section -->
+    <div class="w3-padding-64 w3-content" id="photos">
+      <h2 class="lang w3-text-light-grey" key="optimesa">Οπτικοακουστικό Υλικό</h2>
+      <hr style="width:400px" class="w3-opacity">
+
+      <!-- Grid for photos -->
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half">
+          <iframe width="420" height="345" src="https://www.youtube.com/embed/nbMpxo5Xdf8" frameborder="1"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <div class="w3-half">
+          //photos
+        </div>
+        <!-- End photo grid -->
+      </div>
+      <!-- End Portfolio Section -->
+    </div>
+
+    <!-- Contact Section -->
+    <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+      <h2 class="w3-text-light-grey">Επικοινωνία</h2>
+      <hr style="width:250px" class="w3-opacity">
+
+      <div class="w3-section">
+        <p class="lang" key="location"><i
+            class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>Αθήνα, Ελλάδα</p>
+        <p class="lang" key="telephone"><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>
+          Τηλέφωνο: +00 151515</p>
+        <p class="lang" key="mail"><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email:
+          mail@mail.com</p>
+      </div><br>
+
+
+      <!-- End Contact Section -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+      <a href="https://www.facebook.com/" id='diesi' class="fa fa-facebook"></a>
+      <a href="https://www.twitter.com/" class="fa fa-twitter" id='diesi'></a>
+
+    </footer>
+
+
+  </div>
+
+  <script>
+    var language;
+
+    function getLanguage() {
+      (localStorage.getItem('language') == null) ? setLanguage('en'): false;
+      $.ajax({
+        url: '/language/' + localStorage.getItem('language') + '.json',
+        dataType: 'json',
+        async: false,
+        dataType: 'json',
+        success: function (lang) {
+          language = lang
+        }
+      });
+    }
+
+    function setLanguage(lang) {
+      localStorage.setItem('language', lang);
+    }
+
+
+    $(document).ready(function () {
+      $("#div1").text(language.date);
+    });
+  </script>
+
+
+</body>
+
+</html>
